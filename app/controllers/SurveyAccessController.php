@@ -42,10 +42,17 @@ class SurveyAccessController extends \BaseController {
 		});
 		Mailgun::send('emails.mail', array('username'=>$username,'token'=>$token), function($message) use ($email){
                      $message->to($email,"Hey")->subject('Welcome!');});//mail
-		return "We have sent an email to ".$email." with survey link and instructions";
+		$message= "We have sent an email to ".$email." with survey link and instructions";
+		$this->success($email);
+		// return View::make('mailsuccess')->with(array('message'=>$message));
+
+		// return "We have sent an email to ".$email." with survey link and instructions";
 	}
 
-
+	public function success($email)
+	{
+		return "We have sent an email to ".$email." with survey link and instructions";
+	}
 
 	//GIVE ACCESS BY TOKEN AND TIME
 	public function giveAccess($token,$username)
