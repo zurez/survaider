@@ -23,3 +23,7 @@ Route::get('game/{token}/{username}/1',function ()
 {
 	return View::make('game');
 });
+//Testing
+
+Route::get('json','JsonTableController@show');
+ROute::post('json','JsonTableController@getjson');
