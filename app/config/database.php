@@ -54,10 +54,10 @@ return array(
 
 		'mysql' => array(
 			'driver'    => 'mysql',
-			'host'      => '127.0.0.1',
+			'host'      => 'survaider.clvas0uefmea.us-west-2.rds.amazonaws.com:3306',
 			'database'  => 'survaider',
-			'username'  => 'root',
-			'password'  => '',
+			'username'  => 'survaiderdb',
+			'password'  => 'survaider',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',

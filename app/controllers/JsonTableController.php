@@ -44,7 +44,9 @@ class JsonTableController extends \BaseController {
 				$table->timestamps();
 
 			});
+			echo "Your Table has been Created.<a href='/phpmyadmin'>here</a>";
 		});
+
 	}
 
 
