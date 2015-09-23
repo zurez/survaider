@@ -33,7 +33,7 @@ class ResponseController extends \BaseController {
 		$cid= $json['c_id'];//Our Column
 		$response=$json['answer'];
 		$user= $json['u_id'];
-		DB::table($table)->insert(array($cid=>$response))
+		DB::table($table)->insert(array($cid=>$response))->where()
 	}
 
 }
