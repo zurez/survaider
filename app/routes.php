@@ -29,7 +29,10 @@ Route::get('game/{token}/{username}/1',function ()
 	return View::make('game');
 });
 //SURVEY RESPONSE POST
-Route::post('postdata',array('as'=>'postdata','DemoController@filter'));
+// Route::get('postdata',function(){
+// 	return View::make('testpost');
+// });
+Route::get('postdata',array('as'=>'postdata','uses'=>'DemoController@filter'));
 //Testing
 Route::get('g',function ()
 {
