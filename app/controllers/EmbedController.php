@@ -7,12 +7,12 @@ class EmbedController extends \BaseController {
 	 *
 	 * @return Response
 	 */
-	public function index($surveyId=Null)
+	public function index()
 	{
-		
+
 		return Response::json(array(
-			"survey_link":""
-			"token":""
+			"error"=>"false",
+			"condition"=>"alive"
 
 			));
 
@@ -25,6 +25,12 @@ class EmbedController extends \BaseController {
 	
 	public function show($id)
 	{
+		return Response::json(
+			array(
+				"survey_id"=>$id,
+				"survey"=>"{'yolo':'YOLO'}",
+				"response"=>"lol")
+			);
 	}
 
 
