@@ -6,6 +6,8 @@ composer.lock
 .env.php
 .DS_Store
 Thumbs.db
+*.memgz
+
 
 # Elastic Beanstalk Files
 .elasticbeanstalk/*

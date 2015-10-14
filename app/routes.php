@@ -40,3 +40,15 @@ Route::get('g',function ()
 });
 Route::get('json','JsonTableController@show');
 ROute::post('json','JsonTableController@getjson');
+Route::get('t',function ()
+{
+	 Response::json(array("status"=>"cool"));
+});
+
+
+// EMBED API
+
+Route::group(array('prefix'=>'api/v1'),function()
+{
+	Route::resource("survey.embed",'EmbedController');
+	});

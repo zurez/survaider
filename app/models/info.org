@@ -1,0 +1,20 @@
+login: ftp.friendmonkey.org
+username: friendmonkeyedit
+password: Blue@12345#
+
+
+
+
+website: ipage.com - Cpanel:
+login: friendmonkeyorg
+Blue@1234
+
+
+
+
+wordpress admin:
+
+
+Admin URL: http://friendmonkey.org//wp-admin
+Username: friendmonkey
+Password: D3v|D@6G04
